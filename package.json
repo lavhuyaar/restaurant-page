@@ -7,5 +7,7 @@
   },
   "dependencies": {
     "html-webpack-plugin": "^5.6.0"
-  }
+  },
+  "scripts": {
+     "push": "git subtree push --prefix dist origin gh-pages" }
 }
