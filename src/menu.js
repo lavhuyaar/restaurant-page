@@ -32,7 +32,7 @@ export function loadMenu() {
     const beverageTwoTitle = document.createElement('h4');
     beverageTwoTitle.textContent = 'Cappuccino Coffee';
     const beverageTwoDescription = document.createElement('p');
-    beverageTwoDescription.textContent = `The perfect balance of espresso, steamed milk and foam. Our cappuccino coffee is all about taste, culture and ofzcourse, coffee.`;
+    beverageTwoDescription.textContent = `The perfect balance of espresso, steamed milk and foam. Our cappuccino coffee is all about taste, culture and of course, coffee.`;
     const beverageTwoPrice = document.createElement('p');
     beverageTwoPrice.textContent = ` Price : 70 Rs/- `;
     beverageTwo.append(beverageTwoTitle, beverageTwoDescription, beverageTwoPrice);
