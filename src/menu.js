@@ -56,7 +56,7 @@ export function loadMenu() {
     const beverageFourDescription = document.createElement('p');
     beverageFourDescription.textContent = `Owner's patented coffee recipe. Also recognised as the "Universe's best coffee".`;
     const beverageFourPrice = document.createElement('p');
-    beverageFourPrice.textContent = ` Price : 200 Rs/- `;
+    beverageFourPrice.textContent = ` Price : 180 Rs/- `;
     beverageFour.append(beverageFourTitle, beverageFourDescription, beverageFourPrice);
 
     beverages.append(beverageOne, beverageTwo, beverageThree, beverageFour);
