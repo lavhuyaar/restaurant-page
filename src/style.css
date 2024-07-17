@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background-color: #cb985f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Content div*/
+#content {
+  width: 100%;
+}
+
+p {
+  font-weight: 500;
+}
+
+/*Navbar with three buttons*/
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 70px;
+  border: none;
+}
+
+/*Buttons*/
+button {
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  background-color: #562723;
+  filter: brightness(0.8);
+  cursor: pointer;
+}
+
+/*Home default button*/
+.home-btn {
+  background-color: #410e0a;
+}
+
+/*Homepage*/
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 50px;
+}
+
+/*Main heading of all three sections*/
+.homepage > h1,
+.menu > h1,
+.contact > h1 {
+  font-size: 4rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* "Lav'ly Cafe" heading*/
+.homepage > h1 {
+  margin-top: 50px;
+}
+
+/*Info box(description)*/
+.description {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  width: 30%;
+  gap: 20px;
+  margin-top: 2rem;
+  padding: 0.8rem;
+}
+
+/*Info*/
+.description > p {
+  font-size: 1.2rem;
+  grid-row: 1 / 2;
+}
+
+/*Info given by*/
+.description > h4 {
+  font-size: 1.5rem;
+  grid-row: 2 / 3;
+}
+
+/*Timing box*/
+.timing {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0.8rem;
+}
+
+/*Timing box heading*/
+.timing > h4 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+/*Timing box lists*/
+.timing > ul > li {
+  list-style: none;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/*Location box*/
+.location {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0.8rem;
+}
+
+/*Location box heading*/
+.location > h4 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+/*Location box text*/
+.location > p {
+  font-size: 1.2rem;
+}
+
+/*Menu Page*/
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Beverages grid*/
+.beverages {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 40px;
+  margin: 40px 20px 20px 20px;
+}
+
+/*Beverages(card)*/
+.beverages > div {
+  height: 250px;
+  display: grid;
+  grid-template-rows: 2fr 4fr;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+/*Beverages titles*/
+.beverages > div > h4 {
+  font-size: 1.5rem;
+}
+
+/*Beverages about*/
+.beverages > div > p {
+  font-size: 1.2rem;
+}
+
+/*Beverages price*/
+.beverages > div > p + p {
+  font-weight: 800;
+}
+
+/*Contact page*/
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Contact info grid*/
+.contact-grid {
+  width: 80%;
+  display: grid;
+  gap: 50px;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 50px;
+}
+
+/*Contacts*/
+.contact-grid > div {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  padding: 20px;
+  gap: 10px;
+  margin: 20px 0px 20px 0px;
+}
+
+/*Contacts' name*/
+.contact-grid > div > h4 {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+/*Contacts' about*/
+.contact-grid > div > pre {
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 1000px) {
+  .description,
+  .timing,
+  .location {
+    width: 80%;
+  }
+}
+
+.description, .timing, .location, .beverages > div, .contact-grid > div {
+  background-color: #e6c39b;
+  border-radius: 10px;
+  filter: drop-shadow(4px 4px 2px #704503);
+}
